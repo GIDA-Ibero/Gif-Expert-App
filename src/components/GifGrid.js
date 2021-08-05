@@ -4,7 +4,9 @@ import { useFetch } from '../hooks/useFetch';
 import { GifGridItem } from './GifGridItem';
 
 export const GifGrid = ({ category }) => {
+  
   const { data:images, loading } = useFetch( category );
+
   return (
     <div>
       <h3>{ category }</h3>
